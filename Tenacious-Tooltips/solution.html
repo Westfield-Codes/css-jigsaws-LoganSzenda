@@ -8,8 +8,26 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="../style.css" rel="stylesheet" type="text/css" />
 	<style>	
-    
-    /* Identify the parent and child elements below, and apply the positioning, visibility */
+    .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px solid black; 
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+ 
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 	
   </style>
 </head>
